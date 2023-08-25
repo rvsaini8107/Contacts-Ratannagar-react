@@ -43,7 +43,7 @@ const subCategories = [
             "Railways",
             "Airports",
             "Electrical",
-            "Nagarpalika",
+            "Municipality",
             "Hospitals",
             "Post Offices",
         ]
