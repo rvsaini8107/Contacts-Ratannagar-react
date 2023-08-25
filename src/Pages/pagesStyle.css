@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:ital,wght@0,500;0,700;1,400;1,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Tangerine:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +21,17 @@
   padding: 5% 3%;
   border-radius: 15px 1px;
   font-size: x-large;
+  background-image: url("../images/night.png");
+  background-position: center;
+  background-origin: border-box;
+  background-size: contain;
+  background-repeat: round;
+
+}
+.background-img-Rajasthan {
+  background-image: url("../images/rajasthan.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 /* userSignup */
 .userLoginForm input {
@@ -39,51 +50,88 @@
   gap: 20px;
 } */
 .sub-Category-div {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  /* .card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+/* .card {
     border: 3px solid red;
     margin: 2% 2%;
     padding: 1% 1%;
   }
    */
-   .card {
-    border-radius: 22px;
-    box-shadow: -18px 22px 45px rgba(232,28,66,.89),18px -22px 45px rgba(53,28,232,.74);
-    gap: 10px;
-    padding: 3%;
-    width: 500px;
-    margin: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 14px;
-  }
+.card {
+  border-radius: 22px;
+  box-shadow: -18px 22px 45px rgba(232, 28, 66, 0.89),
+    18px -22px 45px rgba(53, 28, 232, 0.74);
+  gap: 10px;
+  padding: 3%;
+  width: 500px;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
 
-  /* navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1% 6%;
-  }
-  .links {
-    display: flex;
-    gap: 25px;
-  }
-  .active {
-    color: #ffcc30;
-  }
-  .links a {
-    text-decoration: none;
-    font-size: large;
-  }
-  a{
-    text-decoration: none;
-  }
-  .main-navbar {
-    border-bottom: 1px solid #ffcc30;
-  }
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% 6%;
+}
+.links {
+  display: flex;
+  gap: 25px;
+}
+.active {
+  color: #ffcc30;
+}
+.links a {
+  text-decoration: none;
+  font-size: large;
+}
+a {
+  text-decoration: none;
+}
+.main-navbar {
+  border-bottom: 1px solid #ffcc30;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+.navbar h1 {
+  font-family: "Kaushan Script", cursive;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}
+/* home image */
+.welcome {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+.elephant {
+  background: white;
+  width: 316px;
+  border: 1px solid black;
+  border-radius: 182px 48px 7px 44px;
+}
+.welcome-h2 {
+  color: white;
+  text-align: center;
+}
+.welcome-h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: xxx-large;
+}
+.welcome-h2-myName {
+  color: #ffcc30;
+  letter-spacing: 3px;
+  font-family: "Tangerine", cursive;
+  font-size: xxx-large;
+}
