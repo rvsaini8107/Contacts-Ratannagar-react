@@ -2,9 +2,31 @@ import React from "react";
 import { categories, categoryLink } from "../Data/catagoryArray";
 import { Link, NavLink } from "react-router-dom";
 import elephant from "../images/elephant.png";
-import wel from "../images/wel.jpg";
+import cam from "../images/camal.png";
+import { Routes, Route } from "react-router-dom";
+
+import {
+  GusthousePage,
+  TemplePage,
+  SchoolPage,
+  ShopsPage,
+  GovtPage,
+  MasjitPage,
+  PrivateJobPage,
+  HospitalPage,
+  IronIndustriesPage,
+  WoodenIndustriesPage,
+} from "./AllPages";
 
 const Home = () => {
+  const [categoryThis, setCategoryThis] = React.useState("ShopsPage");
+const  HandelClick = (category) => {
+  console.log(category,"clicked category")
+  setCategoryThis(category)
+
+  
+  }
+const ComponentBackgroundImageDiv = ()=><div className="background-img-Rajasthan" ></div>
   return (
     <div className="homePage" >
       <div className="welcome">
@@ -19,17 +41,56 @@ const Home = () => {
           <img src={elephant} alt={elephant} className="elephant" />
         </div>
       </div>
-      <div className="background-img-Rajasthan">
+      <ComponentBackgroundImageDiv />
+      {/* <div to={categoryLink[category]} className="categories" key={i}></div> */}
       
-      </div>
-      <div className="main-category-list">
+      <div className="info-data-main">
+        <div className="main-category-list">
         {categories.map((category, i) => (
-          <Link to={categoryLink[category]} className="categories" key={i}>
+          <div onClick={()=>HandelClick(categoryLink[category])} className="categories" key={i}>
             {category}
             {categoryLink.category}
-          </Link>
+          </div>
         ))}
       </div>
+      <div className="infoBox">
+        {
+          categoryThis=="ShopsPage" && <ShopsPage />
+        }
+        {
+          categoryThis=="SchoolPage" && <SchoolPage />
+        }
+        {
+          categoryThis=="TemplePage" && <TemplePage />
+        }
+        {
+          categoryThis=="GusthousePage" && <GusthousePage />
+        }
+        {
+          categoryThis=="HospitalPage" && <HospitalPage />
+        }
+        {
+          categoryThis=="PrivateJobPage" && <PrivateJobPage />
+        }
+        {
+          categoryThis=="MasjitPage" && <MasjitPage />
+        }
+        {
+          categoryThis=="WoodenIndustriesPage" && <WoodenIndustriesPage />
+        }
+        {
+          categoryThis=="IronIndustriesPage" && <IronIndustriesPage />
+        }
+        {
+          categoryThis=="GovtPage" && <GovtPage />
+        }
+
+        
+        
+      </div>
+      </div>
+      <ComponentBackgroundImageDiv />
+      
     </div>
   );
 };

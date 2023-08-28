@@ -36,7 +36,7 @@ function App() {
 
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} />
         <Route path="/shops" element={<ShopsPage />} />
         <Route path="/Governments" element={<GovtPage />} />
         <Route path="/gusthouse" element={<GusthousePage />} />
@@ -46,7 +46,7 @@ function App() {
         <Route path="/Private Workers" element={<PrivateJobPage />} />
         <Route path="/Hospitals" element={<HospitalPage />} />
         <Route path="/ironIndustry" element={<IronIndustriesPage />} />
-        <Route path="/woodenIndustry" element={<WoodenIndustriesPage />} />
+        <Route path="/woodenIndustry" element={<WoodenIndustriesPage />} /> */}
 
         <Route path="/about" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactUsPage />} />

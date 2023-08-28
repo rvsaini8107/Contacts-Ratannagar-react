@@ -12,15 +12,28 @@ export const categories = [
 
 ]
 export const categoryLink = {
-    "Shops":"shops",
-    "Schools":"Schools",
-    "Temples":"temples",
-    "Guest Houses":"gusthouse",
-    "Hospitals":"Hospitals",
-    "Private Workers":"Private Workers",
-    "Masjids":"masjits",
-    "Wooden Industries":"woodenIndustry",
-    "Iron Industries":"ironIndustry",
-    "Governments":"Governments",
+    "Shops":"ShopsPage",
+    "Schools":"SchoolPage",
+    "Temples":"TemplePage",
+    "Guest Houses":"GusthousePage",
+    "Hospitals":"HospitalPage",
+    "Private Workers":"PrivateJobPage",
+    "Masjids":"MasjitPage",
+    "Wooden Industries":"WoodenIndustriesPage",
+    "Iron Industries":"IronIndustriesPage",
+    "Governments":"GovtPage",
 
   }
+// export const categoryLink = {
+//     "Shops":"shops",
+//     "Schools":"Schools",
+//     "Temples":"temples",
+//     "Guest Houses":"gusthouse",
+//     "Hospitals":"Hospitals",
+//     "Private Workers":"Private Workers",
+//     "Masjids":"masjits",
+//     "Wooden Industries":"woodenIndustry",
+//     "Iron Industries":"ironIndustry",
+//     "Governments":"Governments",
+
+//   }
