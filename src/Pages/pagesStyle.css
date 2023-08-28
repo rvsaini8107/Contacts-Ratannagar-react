@@ -8,15 +8,20 @@
   background: black;
   color: aqua;
 }
-
+.App {
+  margin-top: 10%;
+}
 .main-category-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin: 5% 4%;
+  gap: 20px;
+  margin: 4% 4%;
+  flex-direction: column;
+  width: 15%;
+  text-align: center;
 }
 
-.categories {
+/* .categories {
   border: 2px solid aqua;
   padding: 5% 3%;
   border-radius: 15px 1px;
@@ -27,14 +32,28 @@
   background-size: contain;
   background-repeat: round;
 
+} */
+.categories {
+  /* background-image: url("../images/night.png");
+  background-origin: border-box;
+  background-position: 50%;
+  background-repeat: round;
+  background-size: contain;
+  border: 0px solid aqua;*/
+  border-radius: 15px 1px;
+font-size: large;
+padding: 5% 3%;
+box-shadow: -2px 5px 31px rgba(232, 28, 66, 0.89), 14px -13px 16px rgba(53, 28, 232, 0.74);
+color: #ffcc30;
+margin-left: 9%;
 }
+
 .background-img-Rajasthan {
   background-image: url("../images/rajasthan.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
   height: 202px;
-
 }
 /* userSignup */
 .userLoginForm input {
