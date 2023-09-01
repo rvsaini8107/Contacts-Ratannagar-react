@@ -45,14 +45,24 @@
         flex-wrap: nowrap;
         overflow: scroll;
         width: 99%;
+        padding: 10%;
       }
       .categories {
         font-size: medium;
         padding: 1% 6%;
-        margin: 10%;
+        margin: 1%;
       }
       .sub-Category-div {
         gap: 10px;
+      }
+      .contect-div {
+        flex-direction: column;
+      }
+      .background-img-Rajasthan.class2 {
+        height: 50px;
+      }
+      .background-img-Rajasthan {
+        background-size: contain;
       }
     
 
