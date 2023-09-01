@@ -201,6 +201,16 @@ a {
   font-family: "Tangerine", cursive;
   font-size: xxx-large;
 }
+.welcome-myName {
+  font-size: medium;
+  text-align: center;
+  color: white;
+}
+.welcome-h2 {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
 
 /* box - info container main */
 .info-data-main {

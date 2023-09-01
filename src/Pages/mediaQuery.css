@@ -28,11 +28,19 @@
     }
     .welcome-h1 {
         font-family: "Kaushan Script", cursive;
-        font-size: medium;
+        font-size: x-large;
+        text-align: center;
     }
+    .welcome-myName {
+        font-size: medium;
+        text-align: center;
+        color: white;
+      }
     .welcome-h2 {
-        font-size: medium;
-    }
+        display: flex;
+        flex-direction: column;
+        color: white;
+      }
     .background-img-Rajasthan.class1 {
         height: 50px;
       }
