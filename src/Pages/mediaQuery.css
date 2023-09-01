@@ -55,7 +55,7 @@
         flex-direction: row;
         flex-wrap: nowrap;
         overflow: scroll;
-        width: 99%;
+        width: 95%;
         padding: 10%;
       }
       .categories {
