@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import GetDataFirebase2 from "./GetDataFirebase2";
 import subCategories from "../Data/subCategories";
 const HelpingPage = (props) => {
-  const [selectedItem, setSelectedItem] = useState("");
-  console.log(selectedItem);
+  const [selectedItem, setSelectedItem] = useState("Barbara");
+  // console.log(selectedItem);
 
   return (
     <div className="Subcategory-div-main">
@@ -24,7 +24,9 @@ const HelpingPage = (props) => {
                 {item}
               </div>
             );
-          })}
+          })
+        }
+        
       </div>
       <GetDataFirebase2 page={props.pageName} subCategories={selectedItem} />
     </div>

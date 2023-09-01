@@ -5,10 +5,9 @@ import { db } from "../Firbase";
 import ProfleImage from "../images/userR.png";
 import ProfleImage2 from "../images/profile_icon.png";
 import notFoundImg from "../images/notFound.png";
-import loadingImg from "../images/loading.gif";
 const GetDataFirebase = (props) => {
   const [Data, setData] = useState("");
-  const [Loading, setLoading] = useState(false)
+  const [lastData, setLastData] = useState("");
   const [dataNoFound, setDataNotFound] = useState(false);
   useEffect(() => {
     getDataApi().then((result) => {
@@ -19,14 +18,13 @@ const GetDataFirebase = (props) => {
   const getDataApi = async () => {
     try {
       var DataGet = [];
-      setLoading(true)
+
       const querySnapshot = await getDocs(collection(db, "users_data"));
-      console.log(querySnapshot, "data Loading time");
-      setLoading(false)
-      if (querySnapshot._snapshot.docChanges.length === 0) {
+      console.log(querySnapshot,"data Loading time")
+      if(querySnapshot._snapshot.docChanges.length===0){
         setDataNotFound(true);
-      } else {
-        setDataNotFound(false);
+      }else{
+          setDataNotFound(false);
       }
       for (let i = 0; i < querySnapshot._snapshot.docChanges.length; i++) {
         DataGet.push(
@@ -50,16 +48,12 @@ const GetDataFirebase = (props) => {
   );
   const HtmlContent = (item, key) => {
     return (
-      <div
-        className="profile-page"
-        key={"ProfileCard_id_" + key}
-        id={"ProfileCard_id_" + key}
-      >
+      <div className="profile-page">
         {/* <h2>
           {(item.subCategory.stringValue === "" && key==0) && item.category.stringValue }
         </h2> */}
-        <div className="card" key={"Card_id_" + key} id={"Card_id_" + key}>
-          <div className="profile-div profileimage" key={key} id={item.id}>
+        <div className="card" key={key} id={item.id}>
+          <div className="profile-div profileimage">
             {ProfleImage && (
               <img
                 src={ProfleImage}
@@ -109,51 +103,34 @@ const GetDataFirebase = (props) => {
       </div>
     );
   };
-  const NotFoundFun = () =>{
-return (
-        <div className="no-data-fond-div">
-          <h1 className="notFoundH1">No Data Found</h1>
-          <img src={notFoundImg} className="notFoundImg" alt="Not Found" />
-        </div>
-      );
-  }
-  const GetDataFunction = (Data, HtmlContent) => {
-    const GetDataFunctionSee = Data.filter((item) => {
-      if (
-        item.category.stringValue === props.page &&
-        item.subCategory.stringValue === props.subCategories
-      ) {
-        return item;
-      } else if (
-        item.category.stringValue === props.page &&
-        item.subCategory.stringValue === ""
-      ) {
-        return item;
-      } else {
-        return;
-      }
-    });
-    console.log(GetDataFunctionSee, "GetDataFunctionSeeeeeeeeeeee");
-    if (GetDataFunctionSee.length === 0) {
-      return (
-        NotFoundFun()
-      );
-    }
-    return GetDataFunctionSee.map((item, key) => {
-      return HtmlContent(item, key);
-    });
-  };
 
   return (
     <div className="card-main">
-    
-    {Loading && (
-      loadingImg&&<img src={loadingImg} className="loadingImg" alt="Loading..." />
-    )}
-      {/* {dataNoFound && (
-        <NotFoundFun/>
-      )} */}
-      {Data && GetDataFunction(Data, HtmlContent)}
+    {
+      dataNoFound &&
+     <div className="no-data-fond-div">
+       <h1 className="notFoundH1">No Data Found</h1>
+       <img src={notFoundImg} className="notFoundImg" alt="Not Found" />
+     </div>
+     
+
+    }
+      {Data &&
+        Data.map((item, key) => {
+          if (
+            item.category.stringValue === props.page &&
+            item.subCategory.stringValue === props.subCategories
+          ) {
+            return HtmlContent(item, key);
+          } else if (
+            item.category.stringValue === props.page &&
+            item.subCategory.stringValue === ""
+          ) {
+            return HtmlContent(item, key);
+          } else {          
+            return;
+          }
+        })}
     </div>
   );
 };

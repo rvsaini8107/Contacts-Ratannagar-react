@@ -294,7 +294,25 @@ a {
   max-height: 200px;
   border-radius: 50%;
 }
-
+.no-data-fond-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notFoundH1 {
+  color: red;
+}
+.notFoundImg {
+  width: 150px;
+}
+/* loading */
+.loadingImg {
+  width: 100px;
+  height: 100px;
+  background: beige;
+  border-radius: 50%;
+  padding: 1%;
+}
 /* icon */
 .contactLink {
   display: flex;
