@@ -288,10 +288,19 @@ a {
   border-radius: 50%;
 }
 
+/* icon */
+.contactLink {
+  display: flex;
+  flex-direction: revert;
+  align-items: center;
+}
 
-
-
-
+.icon-text {
+  font-size: larger;
+}
+.icon-imgg {
+  width: 35px;
+}
 /* footer */
 .footer {
   display: flex;

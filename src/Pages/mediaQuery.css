@@ -75,6 +75,12 @@
       .background-img-Rajasthan {
         background-size: contain;
       }
+      .contact-link {
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        padding: 15% 0px;
+      }
     
 
 }
