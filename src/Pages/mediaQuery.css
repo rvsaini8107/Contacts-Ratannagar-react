@@ -1,0 +1,59 @@
+@media screen and (max-width: 600px) {
+
+    /* navbar */
+    *{
+        font-size: small;
+    }
+    .navbar h1 {
+        font-size: medium;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .welcome {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 30%;
+    }
+    .elephant {
+        width: 85%;
+    }
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .welcome-h1 {
+        font-family: "Kaushan Script", cursive;
+        font-size: medium;
+    }
+    .welcome-h2 {
+        font-size: medium;
+    }
+    .background-img-Rajasthan.class1 {
+        height: 50px;
+      }
+      .info-data-main {
+        display: flex;
+        flex-direction: column;
+      }
+      .main-category-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        width: 99%;
+      }
+      .categories {
+        font-size: medium;
+        padding: 1% 6%;
+        margin: 10%;
+      }
+      .sub-Category-div {
+        gap: 10px;
+      }
+    
+
+}
