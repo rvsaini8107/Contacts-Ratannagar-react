@@ -32,10 +32,10 @@ const Navbar = () => {
       </nav>
       <div className={`links-menu ${classUpdate}`} >
         <div className="link-div-menu">
-        <NavLink to="/">Home</NavLink>
-          <NavLink to="/about">About Us</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-          <NavLink to="/signup">SignUp</NavLink>
+        <NavLink to="/" onClick={() => HeandlerListClick()}>Home</NavLink>
+          <NavLink to="/about" onClick={() => HeandlerListClick()}>About Us</NavLink>
+          <NavLink to="/contact" onClick={() => HeandlerListClick()}>Contact</NavLink>
+          <NavLink to="/signup" onClick={() => HeandlerListClick()}>SignUp</NavLink>
           </div>
        
           

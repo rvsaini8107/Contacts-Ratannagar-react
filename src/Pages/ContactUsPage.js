@@ -28,7 +28,7 @@ const ContactUsPage = () => {
                   />{" "}
                 </div>
               )}
-              <div className="icon-text">+91 8107775019</div>
+              <div className="icon-text">+918107775019</div>
             </Link>
             <Link
               className="contactLink contact-whatsapp"

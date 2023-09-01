@@ -267,6 +267,7 @@ a {
   padding: 4% 0% 5% 9%;
   border-radius: 5px;
   font-size: large;
+  width: 100%;
 }
 .button-submit {
   background: white;
