@@ -41,6 +41,9 @@
         flex-direction: column;
         color: white;
       }
+      .left {
+        margin-top: 15%;
+      }
     .background-img-Rajasthan.class1 {
         height: 50px;
       }
