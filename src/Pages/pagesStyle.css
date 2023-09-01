@@ -105,11 +105,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 70px;
 }
 
 .card {
-  border-radius: 22px;
+  border-radius: 100px 0px 22px 22px;
   box-shadow: -18px 22px 45px rgba(232, 28, 66, 0.89),
     18px -22px 45px rgba(53, 28, 232, 0.74);
   gap: 10px;
@@ -121,6 +121,7 @@
   justify-content: center;
   align-items: center;
   gap: 14px;
+  padding: 10% 0px;
 }
 
 /* navbar */
@@ -139,6 +140,12 @@
 .active {
   color: #ffcc30;
 }
+.active_btn{
+  color: #ffcc30;
+  background: #0508b5;
+  border: 2px solid #ff00e3;
+}
+
 
 .links a {
   text-decoration: none;
@@ -264,7 +271,12 @@ a {
 .user-login-div {
   margin-bottom: 20%;
 }
-
+/* profile page */
+.profileImage{
+  width: 150px;
+  max-height: 200px;
+  border-radius: 50%;
+}
 
 
 

@@ -52,7 +52,7 @@ const Home = () => {
           {categories.map((category, i) => (
             <div
               onClick={() => HandelClick(categoryLink[category])}
-              className="categories"
+              className={`categories ${categoryThis == categoryLink[category]? " active_btn" : ""}`} 
               key={i}
             >
               {category}
