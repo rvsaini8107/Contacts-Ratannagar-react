@@ -25,6 +25,11 @@ const UserSignup = () => {
     website: "",
   });
 
+  if(message.mess){
+    setTimeout(() => {
+      setMessage({ mess: "", type: "" });
+    }, 3000);
+  }
   const CatagoryUser = () => {
     const handleSelectChange = (e) => {
       setUser({ ...user, category: e.target.value });
@@ -161,7 +166,7 @@ const UserSignup = () => {
   return (
     <div>
       <div className="heading-user-login">
-        <h1>User Signup</h1>
+        <h1 className="heading-signup">User Signup</h1>
       </div>
       <div className="user-login-div">
         <form
@@ -169,162 +174,168 @@ const UserSignup = () => {
           className="userLoginForm"
           onSubmit={(e) => onSubmitForm(e)}
         >
-          <div className="user-name">
-            <input
-              type="text"
-              name="Name"
-              id="userName"
-              placeholder="Name :"
-              required
-              onChange={(e) => setUser({ ...user, name: e.target.value })}
-              value={user.name} // Add this to bind the input value
-            />
-          </div>
+        
+        <div className="left"> 
+            <div className="user-name">
+                <input
+                  type="text"
+                  name="Name"
+                  id="userName"
+                  placeholder="Name :"
+                  required
+                  onChange={(e) => setUser({ ...user, name: e.target.value })}
+                  value={user.name} // Add this to bind the input value
+                />
+              </div>
 
-          <div className="user-phone">
-            <input
-              type="tel"
-              name="Phone"
-              id="userPhone"
-              placeholder="Phone :"
-              required
-              onChange={(e) => setUser({ ...user, phone: e.target.value })}
-              value={user.phone} // Add this to bind the input value
-            />
-          </div>
-          <div className="user-phone2">
-            <input
-              type="tel"
-              name="Phone2"
-              id="userPhone2"
-              placeholder="Phone Second :"
-              onChange={(e) => setUser({ ...user, phone2: e.target.value })}
-              value={user.phone2} // Add this to bind the input value
-            />
-          </div>
-          <div className="user-password">
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Password :"
-              required
-              onChange={(e) => setUser({ ...user, password: e.target.value })}
-              value={user.password} // Add this to bind the input value
-            />
-          </div>
+              <div className="user-phone">
+                <input
+                  type="tel"
+                  name="Phone"
+                  id="userPhone"
+                  placeholder="Phone :"
+                  required
+                  onChange={(e) => setUser({ ...user, phone: e.target.value })}
+                  value={user.phone} // Add this to bind the input value
+                />
+              </div>
+              <div className="user-phone2">
+                <input
+                  type="tel"
+                  name="Phone2"
+                  id="userPhone2"
+                  placeholder="Phone Second :"
+                  onChange={(e) => setUser({ ...user, phone2: e.target.value })}
+                  value={user.phone2} // Add this to bind the input value
+                />
+              </div>
+              <div className="user-password">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password :"
+                  required
+                  onChange={(e) => setUser({ ...user, password: e.target.value })}
+                  value={user.password} // Add this to bind the input value
+                />
+              </div>
 
-          <div className="user-email">
-            <input
-              type="email"
-              name="Email"
-              id="userEmail"
-              placeholder="Email :"
-              onChange={(e) => setUser({ ...user, email: e.target.value })}
-              value={user.email} // Add this to bind the input value
-            />
+              <div className="user-email">
+                <input
+                  type="email"
+                  name="Email"
+                  id="userEmail"
+                  placeholder="Email :"
+                  onChange={(e) => setUser({ ...user, email: e.target.value })}
+                  value={user.email} // Add this to bind the input value
+                />
+              </div>
+              <div className="user-location">
+                <input
+                  type=""
+                  name="location"
+                  id="userlocation"
+                  placeholder="Location :"
+                  onChange={(e) => setUser({ ...user, location: e.target.value })}
+                  value={user.location} // Add this to bind the input value
+                />
+              </div>
+              <div className="user-category">
+              <CatagoryUser />
+            </div>
           </div>
-          <div className="user-location">
-            <input
-              type=""
-              name="location"
-              id="userlocation"
-              placeholder="Location :"
-              onChange={(e) => setUser({ ...user, location: e.target.value })}
-              value={user.location} // Add this to bind the input value
-            />
-          </div>
-          <div className="user-category">
-            <CatagoryUser />
-          </div>
-          <div className="user-subCategory">
-            {categoryChoose && <SubCatagoryUser />}
-          </div>
-          <div className="user-forum-name">
-            <input
-              type="text"
-              className="user-forum-name-input"
-              name="ForumName"
-              id="userForumName"
-              placeholder="Forum Name :"
-              onChange={(e) => setUser({ ...user, forumName: e.target.value })}
-              value={user.forumName} // Add this to bind the input value
-            />
-          </div>
-          <div className="user-description">
-            <textarea
-              name="description"
-              id="userDescription"
-              cols="20"
-              rows="2"
-              placeholder="Description"
-              onChange={(e) =>
-                setUser({ ...user, description: e.target.value })
-              }
-              value={user.description} // Add this to bind the input value
-            ></textarea>
-          </div>
-          {/* <div className="user-address">
-            <textarea
-              name="Address"
-              id="userAddress"
-              cols="20"
-              rows="2"
-              placeholder="Address"
-              onChange={(e) => setUser({ ...user, address: e.target.value })}
-              value={user.address} // Add this to bind the input value
-            ></textarea>
-          </div> */}
-          <div className="user-whatsapp">
-            <input
-              type="tel"
-              name="whatsapp"
-              id="whatsapp"
-              placeholder="Whatsapp Number :"
-              onChange={(e) => setUser({ ...user, whatsapp: e.target.value })}
-              value={user.whatsapp} // Add this to bind the input value
-            />
-          </div>
-          <div className="user-facebook">
-            <input
-              type="url"
-              name="facebook"
-              id="facebook"
-              placeholder="Facebook Link :"
-              onChange={(e) => setUser({ ...user, facebook: e.target.value })}
-              value={user.facebook} // Add this to bind the input value
-            />
-          </div>
-          <div className="user-instagram">
-            <input
-              type="url"
-              name="instagram"
-              id="instagram"
-              placeholder="instagram Link :"
-              onChange={(e) => setUser({ ...user, instagram: e.target.value })}
-              value={user.instagram} // Add this to bind the input value
-            />
-          </div>
-          <div className="user-website">
-            <input
-              type="url"
-              name="website"
-              id="website"
-              placeholder="Website Link :"
-              onChange={(e) => setUser({ ...user, website: e.target.value })}
-              value={user.website} // Add this to bind the input value
-            />
-          </div>
-          <div className="user-submit">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+        <div className="right">
         {message.type == "success" && (
           <p style={{ color: "green" }}>{message.mess}</p>
         )}
         {message.type == "error" && (
           <p style={{ color: "green" }}>{message.mess}</p>
         )}
+            <div className="user-subCategory">
+              {categoryChoose && <SubCatagoryUser />}
+            </div>
+            <div className="user-forum-name">
+              <input
+                type="text"
+                className="user-forum-name-input"
+                name="ForumName"
+                id="userForumName"
+                placeholder="Forum Name :"
+                onChange={(e) => setUser({ ...user, forumName: e.target.value })}
+                value={user.forumName} // Add this to bind the input value
+              />
+            </div>
+            <div className="user-description">
+              <textarea
+                name="description"
+                id="userDescription"
+                cols="20"
+                rows="2"
+                placeholder="Description"
+                onChange={(e) =>
+                  setUser({ ...user, description: e.target.value })
+                }
+                value={user.description} // Add this to bind the input value
+              ></textarea>
+            </div>
+            {/* <div className="user-address">
+              <textarea
+                name="Address"
+                id="userAddress"
+                cols="20"
+                rows="2"
+                placeholder="Address"
+                onChange={(e) => setUser({ ...user, address: e.target.value })}
+                value={user.address} // Add this to bind the input value
+              ></textarea>
+            </div> */}
+            <div className="user-whatsapp">
+              <input
+                type="tel"
+                name="whatsapp"
+                id="whatsapp"
+                placeholder="Whatsapp Number :"
+                onChange={(e) => setUser({ ...user, whatsapp: e.target.value })}
+                value={user.whatsapp} // Add this to bind the input value
+              />
+            </div>
+            <div className="user-facebook">
+              <input
+                type="url"
+                name="facebook"
+                id="facebook"
+                placeholder="Facebook Link :"
+                onChange={(e) => setUser({ ...user, facebook: e.target.value })}
+                value={user.facebook} // Add this to bind the input value
+              />
+            </div>
+            <div className="user-instagram">
+              <input
+                type="url"
+                name="instagram"
+                id="instagram"
+                placeholder="instagram Link :"
+                onChange={(e) => setUser({ ...user, instagram: e.target.value })}
+                value={user.instagram} // Add this to bind the input value
+              />
+            </div>
+            <div className="user-website">
+              <input
+                type="url"
+                name="website"
+                id="website"
+                placeholder="Website Link :"
+                onChange={(e) => setUser({ ...user, website: e.target.value })}
+                value={user.website} // Add this to bind the input value
+              />
+            </div>
+            <div className="user-submit">
+              <button type="submit" className="button-submit">Sign up</button>
+            </div>
+          </div>
+        </form>
+        
       </div>
     </div>
   );
