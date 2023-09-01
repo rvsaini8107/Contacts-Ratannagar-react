@@ -33,14 +33,14 @@ const Home = () => {
   return (
     <div className="homePage">
       <div className="welcome">
-        <div className="left">
+        <div className="wlc-left">
           <h1 className="welcome-h1">Welcome To Contacts Ratannagar</h1>
           <h2 className="welcome-h2">
             <span className="welcome-myName">- Developer</span>
             <span className="welcome-h2-myName">ShriGanesh Saini</span>
           </h2>
         </div>
-        <div className="right">
+        <div className="wlc-right">
           <img src={elephant} alt={elephant} className="elephant" />
         </div>
       </div>

@@ -21,7 +21,7 @@
     .elephant {
         width: 85%;
     }
-    .right {
+    .wlc-right {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -81,6 +81,36 @@
         flex-direction: row;
         padding: 15% 0px;
       }
-    
+      .logo-nav {
+        display: block;
+      }
+      .links-menu{
+        display: flex;
+      }
+      .displayBlock{
+        display: flex;
+      }
+      .displayNone{
+        display: none;
+      }
+      .link-div-menu {
+        width: 100%;
+        transition: linear .2s;
+        min-height: 1000px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 7%;
+      }
+      /* user form */
+      .userLoginForm {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+      }
 
 }

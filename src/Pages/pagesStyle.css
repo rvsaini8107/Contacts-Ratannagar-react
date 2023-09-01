@@ -131,6 +131,12 @@
   align-items: center;
   margin: 1% 6%;
 }
+.logo-nav {
+  display: none;
+}
+.links-menu{
+  display: none;
+}
 
 .links {
   display: flex;
