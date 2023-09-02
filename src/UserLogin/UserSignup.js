@@ -193,6 +193,7 @@ const UserSignup = () => {
                   type="tel"
                   name="Phone"
                   id="userPhone"
+                  pattern="[0-9]{10}"
                   placeholder="Phone :"
                   required
                   onChange={(e) => setUser({ ...user, phone: e.target.value })}
@@ -203,6 +204,7 @@ const UserSignup = () => {
                 <input
                   type="tel"
                   name="Phone2"
+                  pattern="[0-9]{10}"
                   id="userPhone2"
                   placeholder="Phone Second :"
                   onChange={(e) => setUser({ ...user, phone2: e.target.value })}
