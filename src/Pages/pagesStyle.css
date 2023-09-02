@@ -54,6 +54,9 @@
     14px -13px 16px rgba(53, 28, 232, 0.74);
   color: #ffcc30;
   margin-left: 9%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .class2 {
@@ -104,7 +107,6 @@
 .card-main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 70px;
 }
 
@@ -114,7 +116,7 @@
     18px -22px 45px rgba(53, 28, 232, 0.74);
   gap: 10px;
   padding: 3%;
-  width: 300px;
+  width: 270px;
   margin: 5%;
   display: flex;
   flex-direction: column;
@@ -131,10 +133,12 @@
   align-items: center;
   margin: 1% 6%;
 }
+
 .logo-nav {
   display: none;
 }
-.links-menu{
+
+.links-menu {
   display: none;
 }
 
@@ -146,12 +150,12 @@
 .active {
   color: #ffcc30;
 }
-.active_btn{
+
+.active_btn {
   color: #ffcc30;
   background: #0508b5;
   border: 2px solid #ff00e3;
 }
-
 
 .links a {
   text-decoration: none;
@@ -207,11 +211,13 @@ a {
   font-family: "Tangerine", cursive;
   font-size: xxx-large;
 }
+
 .welcome-myName {
   font-size: medium;
   text-align: center;
   color: white;
 }
+
 .welcome-h2 {
   display: flex;
   flex-direction: column;
@@ -257,10 +263,13 @@ a {
   flex-direction: column;
 }
 
-
 /* user signup */
-.left input,select,textarea,
-.right input,select,textarea,
+.left input,
+select,
+textarea,
+.right input,
+select,
+textarea,
 .button-submit {
   outline: none;
   border: 1px solid white;
@@ -269,11 +278,13 @@ a {
   font-size: large;
   width: 100%;
 }
+
 .button-submit {
   background: white;
   color: #000000fc;
   width: 100%;
 }
+
 .userLoginForm {
   display: flex;
   justify-content: space-evenly;
@@ -285,26 +296,32 @@ a {
   color: white;
   margin: 3% 0px;
 }
+
 .user-login-div {
   margin-bottom: 20%;
 }
+
 /* profile page */
-.profileImage{
+.profileImage {
   width: 150px;
   max-height: 200px;
   border-radius: 50%;
 }
+
 .no-data-fond-div {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .notFoundH1 {
   color: red;
 }
+
 .notFoundImg {
   width: 150px;
 }
+
 /* loading */
 .loadingImg {
   width: 100px;
@@ -313,6 +330,7 @@ a {
   border-radius: 50%;
   padding: 1%;
 }
+
 /* icon */
 .contactLink {
   display: flex;
@@ -324,9 +342,11 @@ a {
 .icon-text {
   font-size: larger;
 }
+
 .icon-imgg {
   width: 35px;
 }
+
 /* .right-div-contact,.left-div-contact {
   gap: 15px;
   display: flex;
