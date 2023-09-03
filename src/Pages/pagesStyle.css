@@ -6,8 +6,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
-  background: black;
   color: aqua;
+}
+body{
+  background:#000000eb;
 }
 
 .App {
