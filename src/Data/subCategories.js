@@ -29,7 +29,8 @@ const subCategories = [
         "Cycle Repair",
         "Hotal & Restaurant",
         "Life Style & Clothing",
-        "Bartan Shop"
+        "Bartan Shop",
+        "Pot Shop",
 
     ]},
     {Schools:[
