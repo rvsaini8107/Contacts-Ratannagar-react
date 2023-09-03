@@ -120,5 +120,12 @@
       .card-main {
         justify-content: center;
       }
+      /* background image */
+      .class1,.class2 {
+        background-image: url("../images/camelMoon.png");
+      }
+      .icon-imgg.icon-call {
+        width: 30px;
+      }
 
 }

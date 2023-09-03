@@ -24,7 +24,7 @@ const ContactUsPage = () => {
                   <img
                     src={call}
                     alt="call"
-                    className="icon-imgg icon-whatsapp"
+                    className="icon-imgg icon-call"
                   />{" "}
                 </div>
               )}

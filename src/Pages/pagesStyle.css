@@ -9,7 +9,7 @@
   color: aqua;
 }
 body{
-  background:#000000eb;
+  background:#130f0feb;
 }
 
 .App {
@@ -113,6 +113,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   gap: 70px;
+  margin-top: 5%;
 }
 
 .card {
