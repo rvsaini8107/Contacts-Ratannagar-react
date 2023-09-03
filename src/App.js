@@ -27,6 +27,7 @@ import Navbar from "./Pages/Navbar";
 import Home from "./Pages/Home";
 import UserSignup from "./UserLogin/UserSignup";
 import { Routes, Route } from "react-router-dom";
+import UserLogin from "./UserLogin/UserLogin";
 
 function App() {
   return (
@@ -50,7 +51,7 @@ function App() {
 
         {/* <Route path="/about" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactUsPage />} /> */}
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<UserLogin />} />
         <Route path="/signup" element={<UserSignup />} />
         
 

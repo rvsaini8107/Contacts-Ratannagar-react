@@ -1,0 +1,111 @@
+.container-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+ }
+ .container-card .login-card{
+     position: relative;
+     width: 280px;
+     height: 400px;
+     margin: 30px;
+     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+     border-radius: 15px;
+     background:rgba(255,255,255,0.1) ;
+     overflow: hidden;
+     display: flex;  
+     align-items: center;
+     justify-content: center;
+     border-top: 1px solid rgba(255,255,255,0.5);
+     border-left: 1px solid rgba(255,255,255,0.5);
+     backdrop-filter:blur(5px);
+ }
+ .container-card .login-card .content{
+    padding:20px;
+    text-align: center;
+    /* transform: translateY(100px); */
+    opacity: 1;
+    transition: 0.5s;
+ }
+ /* .container-card .login-card:hover .content{
+     transform: translateY(0);
+     opacity: 1;
+ } */
+ .container-card .login-card .content h2 {
+    position: absolute;
+    top: 30px;
+    right: 15px;
+    font-size: 2em;
+    color: rgba(0,0,0,0.5);
+    pointer-events: none;
+  }
+ .container .login-card .content h3{
+     font-size: 1.8rem;
+     color: #fff;
+     z-index: 1;
+ }
+ .container .login-card .content p{
+     font-size: 1rem;
+     color: #fff;
+     font-weight: 300;
+ }
+ .container .login-card .content a{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    position: relative; 
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+ }
+ /* login input */
+ .input-login {
+    border: none;
+      border-bottom-width: medium;
+      border-bottom-style: none;
+      border-bottom-color: currentcolor;
+    border-bottom: 3px solid aqua;
+    padding: 3% 0% 4px 10px;
+    margin-bottom: 10%;
+    color: black;
+    font-size: large;
+    outline: none;
+  }
+  .loginbutton {
+    padding: 4% 15%;
+    font-size: large;
+    color: black;
+  }
+  .container-card::before {
+    content: " ";
+    padding: 10px;
+    border: 2px solid red;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(#f00,#f0f);
+    animation: sun 121s infinite;
+  }
+  @keyframes sun {
+    0%{
+        clip-path: circle(10% at 1% 15%);
+       
+    }
+    50%{
+        clip-path: circle(10% at 100% 100%);
+        
+    }
+    100%{
+        clip-path: circle(10% at 1% 15%);
+    }
+    
+  }

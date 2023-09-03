@@ -28,6 +28,7 @@ const Navbar = () => {
           <NavLink to="/about">About Us</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <NavLink to="/signup">SignUp</NavLink>
+          <NavLink to="/login">Login</NavLink>
         </div>
       </nav>
       <div className={`links-menu ${classUpdate}`} >
@@ -36,6 +37,7 @@ const Navbar = () => {
           <NavLink to="/about" onClick={() => HeandlerListClick()}>About Us</NavLink>
           <NavLink to="/contact" onClick={() => HeandlerListClick()}>Contact</NavLink>
           <NavLink to="/signup" onClick={() => HeandlerListClick()}>SignUp</NavLink>
+          <NavLink to="/login" onClick={() => HeandlerListClick()}>Login</NavLink>
           </div>
        
           
