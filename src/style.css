@@ -94,18 +94,19 @@
     z-index: -1;
     background: linear-gradient(#f00,#f0f);
     animation: sun 121s infinite;
+    z-index: -9999999;
   }
   @keyframes sun {
     0%{
-        clip-path: circle(10% at 1% 15%);
+        clip-path: circle(10% at 1% 100%);
        
     }
     50%{
-        clip-path: circle(10% at 100% 100%);
+        clip-path: circle(10% at 100% 1%);
         
     }
     100%{
-        clip-path: circle(10% at 1% 15%);
+        clip-path: circle(10% at 1% 100%);
     }
     
   }

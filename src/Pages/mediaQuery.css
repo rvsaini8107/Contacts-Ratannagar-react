@@ -11,6 +11,11 @@
     .links {
         display: none;
     }
+    .links a {
+      text-decoration: none;
+      font-size: large;
+      color: black;
+    }
 
     .welcome {
         display: flex;
@@ -102,6 +107,9 @@
         flex-direction: column;
         gap: 20px;
         padding: 7%;
+        z-index: 999999999999;
+        background: aliceblue;
+        color:black;
       }
       /* user form */
       .userLoginForm {
@@ -132,5 +140,6 @@
         padding: 4% 1% 3% 4%;
         width: 80%;
       }
+      
 
 }
