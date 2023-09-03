@@ -127,5 +127,12 @@
       .icon-imgg.icon-call {
         width: 30px;
       }
+      /* login form */
+      .input-login {
+        
+        padding: 4% 1% 3% 4%;
+        
+        width: 80%;
+      }
 
 }
