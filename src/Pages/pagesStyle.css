@@ -50,7 +50,7 @@
   border-radius: 15px 1px;
   font-size: large;
   padding: 5% 3%;
-  box-shadow: -2px 5px 7px rgba(255, 255, 255, 0.3),1px -5px 7px rgba(255, 255, 255, 0.3);
+  box-shadow: -2px 5px 7px rgba(255, 255, 255, 0.1), 1px -5px 7px rgba(255, 255, 255, 0.1);
   /* box-shadow: -2px 5px 31px rgba(232, 28, 66, 0.89),
     14px -13px 16px rgba(53, 28, 232, 0.74); */
   color: #ffcc30;
@@ -58,6 +58,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-left: 1px solid #ffffff42;
+  border-bottom: 1px solid #ffffff42;
 }
 
 .class2 {
@@ -113,8 +115,9 @@
 
 .card {
   border-radius: 100px 0px 22px 22px;
-  box-shadow: -18px 22px 45px rgba(232, 28, 66, 0.89),
-    18px -22px 45px rgba(53, 28, 232, 0.74);
+  /* box-shadow: -18px 22px 45px rgba(232, 28, 66, 0.89),
+    18px -22px 45px rgba(53, 28, 232, 0.74); */
+
   gap: 10px;
   padding: 3%;
   width: 270px;
@@ -125,6 +128,9 @@
   align-items: center;
   gap: 14px;
   padding: 10% 0px;
+  box-shadow: -1px 3px 37px rgba(255, 255, 255, .2);
+  border-left: 1px solid #ffffff3d;
+  border-top: 1px solid #ffffff3d;
 }
 
 /* navbar */
@@ -153,9 +159,11 @@
 }
 
 .active_btn {
+
   color: #ffcc30;
-  background: #0508b5;
-  border: 2px solid #ff00e3;
+  background: #0508b540;
+  border: 1px solid #ff00e39e;
+
 }
 
 .links a {
