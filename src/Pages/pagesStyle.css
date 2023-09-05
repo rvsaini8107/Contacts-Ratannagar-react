@@ -6,14 +6,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
-  color: aqua;
+  
 }
 body{
-  background:#130f0feb;
+  /* background:#130f0feb; */
+  /* background: linear-gradient(90deg, rgba(204,153,0,1) 0%, rgba(255,204,102,1) 100%); */
+  /* background: linear-gradient(90deg, rgba(204,153,0,0.9415966215587798) 0%, rgba(255,204,102,0.8687674899061186) 100%); */
+  background: linear-gradient(90deg,  rgba(255,204,153,0.9051820557324493)0%, rgba(255,102,0,0.8995798148360907) 100%);
+/* background: linear-gradient(90deg, rgba(102,0,153,0.840756285424326) 8%, rgba(255,204,0,0.913585417076987) 100%); */
 }
-
 .App {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .main-category-list {
@@ -52,10 +55,10 @@ body{
   border-radius: 15px 1px;
   font-size: large;
   padding: 5% 3%;
-  box-shadow: -2px 5px 7px rgba(255, 255, 255, 0.1), 1px -5px 7px rgba(255, 255, 255, 0.1);
+  box-shadow: -2px 5px 7px rgb(255, 255, 255), 1px -5px 7px rgb(255, 255, 255);
   /* box-shadow: -2px 5px 31px rgba(232, 28, 66, 0.89),
     14px -13px 16px rgba(53, 28, 232, 0.74); */
-  color: #ffcc30;
+    color: #5d1916;
   margin-left: 9%;
   display: flex;
   justify-content: center;
@@ -72,7 +75,11 @@ body{
 .class1 {
   background-image: url("../images/rajasthan.jpg");
 }
-
+.wlc-left {
+  color: yellow;
+  background: #00000063;
+  border-radius: 20px;
+}
 .background-img-Rajasthan {
   background-size: cover;
   background-attachment: fixed;
@@ -162,11 +169,10 @@ body{
 }
 
 .active_btn {
-
-  color: #ffcc30;
-  background: #0508b540;
+  color: #fefefffa;
+  background: #161af0f7;
   border: 1px solid #ff00e39e;
-
+  font-weight: bold;
 }
 
 .links a {
@@ -183,6 +189,7 @@ a {
   position: fixed;
   width: 100%;
   top: 0px;
+  background: #ffffffba;
 }
 
 .navbar h1 {
@@ -196,8 +203,13 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  /* margin-top: 15%; */
+  /* margin-bottom: 15%; */
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  height: 460px;
+  background-size: cover;
+
 }
 
 .elephant {
@@ -218,7 +230,7 @@ a {
 }
 
 .welcome-h2-myName {
-  color: #ffcc30;
+  color: yellow;
   letter-spacing: 3px;
   font-family: "Tangerine", cursive;
   font-size: xxx-large;

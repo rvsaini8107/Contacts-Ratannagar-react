@@ -9,6 +9,7 @@ export const categories = [
     "Wooden Industries",
     "Iron Industries",
     "Governments",
+    "Others",
 
 ]
 export const categoryLink = {
@@ -22,6 +23,7 @@ export const categoryLink = {
     "Wooden Industries":"WoodenIndustriesPage",
     "Iron Industries":"IronIndustriesPage",
     "Governments":"GovtPage",
+    "Others":"OthersPage",
 
   }
 // export const categoryLink = {
