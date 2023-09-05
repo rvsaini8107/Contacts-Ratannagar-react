@@ -21,6 +21,7 @@
     }
     .elephant {
         width: 85%;
+        display: none;
     }
     .wlc-right {
         display: flex;
