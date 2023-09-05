@@ -58,7 +58,10 @@
         flex-wrap: nowrap;
         overflow: scroll;
         width: 95%;
-        padding: 10%;
+        padding: 5% 0%;
+        margin: 1px 1px;
+        border-bottom: 1px solid brown;
+        border-top: 1px solid brown;
       }
       .categories {
         font-size: medium;
