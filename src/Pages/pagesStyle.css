@@ -1,20 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu:ital,wght@0,500;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Tangerine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Source+Sans+3:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Lobster&family=Source+Sans+3:wght@400;600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
-  
 }
-body{
+
+body {
   /* background:#130f0feb; */
   /* background: linear-gradient(90deg, rgba(204,153,0,1) 0%, rgba(255,204,102,1) 100%); */
   /* background: linear-gradient(90deg, rgba(204,153,0,0.9415966215587798) 0%, rgba(255,204,102,0.8687674899061186) 100%); */
-  background: linear-gradient(90deg,  rgba(255,204,153,0.9051820557324493)0%, rgba(255,102,0,0.8995798148360907) 100%);
-/* background: linear-gradient(90deg, rgba(102,0,153,0.840756285424326) 8%, rgba(255,204,0,0.913585417076987) 100%); */
+  background: linear-gradient(90deg,
+      rgba(255, 204, 153, 0.9051820557324493) 0%,
+      rgba(255, 102, 0, 0.8995798148360907) 100%);
+  /* background: linear-gradient(90deg, rgba(102,0,153,0.840756285424326) 8%, rgba(255,204,0,0.913585417076987) 100%); */
 }
+
 .App {
   margin-top: 5%;
 }
@@ -58,7 +63,7 @@ body{
   box-shadow: -2px 5px 7px rgb(255, 255, 255), 1px -5px 7px rgb(255, 255, 255);
   /* box-shadow: -2px 5px 31px rgba(232, 28, 66, 0.89),
     14px -13px 16px rgba(53, 28, 232, 0.74); */
-    color: #5d1916;
+  color: #5d1916;
   margin-left: 9%;
   display: flex;
   justify-content: center;
@@ -75,11 +80,13 @@ body{
 .class1 {
   background-image: url("../images/rajasthan.jpg");
 }
+
 .wlc-left {
   color: yellow;
   background: #00000063;
   border-radius: 20px;
 }
+
 .background-img-Rajasthan {
   background-size: cover;
   background-attachment: fixed;
@@ -110,12 +117,6 @@ body{
   gap: 20px;
 }
 
-/* .card {
-    border: 3px solid red;
-    margin: 2% 2%;
-    padding: 1% 1%;
-  }
-   */
 .card-main {
   display: flex;
   flex-wrap: wrap;
@@ -125,22 +126,62 @@ body{
 
 .card {
   border-radius: 100px 0px 22px 22px;
-  /* box-shadow: -18px 22px 45px rgba(232, 28, 66, 0.89),
-    18px -22px 45px rgba(53, 28, 232, 0.74); */
-
   gap: 10px;
   padding: 3%;
-  width: 270px;
-  margin: 5%;
+  width: 350px;
+  margin: 1%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
   justify-content: center;
   align-items: center;
   gap: 14px;
   padding: 10% 0px;
-  box-shadow: -1px 3px 37px rgba(255, 255, 255, .75);
+  box-shadow: -1px 3px 37px rgba(255, 255, 255, 0.75);
   border-left: 1px solid #ffffff3d;
   border-top: 1px solid #ffffff3d;
+  overflow: hidden;
+}
+
+.profile-forum_name {
+  font-family: "Calistoga", cursive;
+  font-size: x-large;
+  text-transform: capitalize;
+}
+
+.profile-div.profile-name {
+  text-transform: capitalize;
+}
+
+.row-div {
+  display: flex;
+  gap: 6px;
+}
+
+.icon-imgg.icon-call-card {
+  width: 20px;
+}
+
+.icon.icon-phone-Call {
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  letter-spacing: 2px;
+}
+
+.card-left-side {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.icon.icon-phone-Call,
+.profile-div.profile-phone2 {
+  display: flex;
+  align-items: center;
+
+  font-family: "Calistoga", cursive;
 }
 
 /* navbar */
@@ -209,7 +250,6 @@ a {
   background-position: center;
   height: 460px;
   background-size: cover;
-
 }
 
 .elephant {
@@ -365,6 +405,8 @@ textarea,
 
 .icon-text {
   font-size: larger;
+  font-family: "Calistoga", cursive;
+  letter-spacing: 1px;
 }
 
 .icon-imgg {

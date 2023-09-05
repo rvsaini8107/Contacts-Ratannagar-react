@@ -7,6 +7,7 @@ import ProfleImage2 from "../images/profile_icon.png";
 import notFoundImg from "../images/notFound.png";
 import notDataGetImg from "../images/synchronize.png";
 import loadingImg from "../images/loading.gif";
+import call from "../images/call.png";
 const GetDataFirebase = (props) => {
   const [Data, setData] = useState("");
   const [Loading, setLoading] = useState(false);
@@ -61,60 +62,93 @@ const GetDataFirebase = (props) => {
           {(item.subCategory.stringValue === "" && key==0) && item.category.stringValue }
         </h2> */}
         <div className="card" key={"Card_id_" + key} id={"Card_id_" + key}>
-          {ProfleImage && (
-            <div className="profile-div profileimage" key={key} id={item.id}>
-              <img
-                src={ProfleImage}
-                className="profileImage"
-                alt={ProfleImage}
-              />
+          <div className="card-rigth-side">
+            {ProfleImage && (
+              <div className="profile-div profileimage" key={key} id={item.id}>
+                <img
+                  src={ProfleImage}
+                  className="profileImage"
+                  alt={ProfleImage}
+                />
+              </div>
+            )}
+          </div>
+          <div className="card-left-side">
+            {item.forumName.stringValue && (
+              <div className="profile-div profile-forum_name">
+                {item.forumName.stringValue}
+              </div>
+            )}
+            {item.name.stringValue && (
+              <div className="profile-div profile-name">
+                {"Name: " + item.name.stringValue}
+              </div>
+            )}
+
+            <div className="row-div">
+              {item.subCategory.stringValue && (
+                <div className="profile-div profile-subCategory">
+                  {item.subCategory.stringValue}
+                </div>
+              )}
+              {item.category.stringValue && (
+                <div className="profile-div profile-category">
+                  {item.category.stringValue}
+                </div>
+              )}
             </div>
-          )}
-          {item.name.stringValue && (
-            <div className="profile-div profile-name">
-              {"Name: " + item.name.stringValue}
-            </div>
-          )}
-          {item.phone.stringValue && (
-            <div className="profile-div profile-phone">
-              <Link
-                className="contactLink contact-whatsapp"
-                to={`tel:${item.phone.stringValue}`}
-              >
-                {"Phone: " + item.phone.stringValue}
-              </Link>
-            </div>
-          )}
-          {item.phone2.stringValue && (
-            <div className="profile-div profile-phone2">
-              <Link
-                className="contactLink contact-whatsapp"
-                to={`tel:${item.phone2.stringValue}`}
-              >
-                {"Phone: " + item.phone2.stringValue}
-              </Link>
-            </div>
-          )}
-          {item.category.stringValue && (
-            <div className="profile-div profile-category">
-              {"category: " + item.category.stringValue}
-            </div>
-          )}
-          {item.subCategory.stringValue && (
-            <div className="profile-div profile-subCategory">
-              {"subCategory: " + item.subCategory.stringValue}
-            </div>
-          )}
-          {item.website.stringValue && (
-            <div className="profile-div profile-website">
-              <Link
-                className="contactLink contact-whatsapp"
-                to={item.website.stringValue}
-              >
-                {"website: " + item.website.stringValue}
-              </Link>
-            </div>
-          )}
+
+            {/* {item.website.stringValue && (
+              <div className="profile-div profile-website">
+                <Link
+                  className="contactLink contact-whatsapp"
+                  to={item.website.stringValue}
+                >
+                  {"website: " + item.website.stringValue}
+                </Link>
+              </div>
+            )} */}
+            {item.phone.stringValue && (
+              <div className="profile-div profile-phone">
+                <Link
+                  className="contactLink contact-phone"
+                  to={`tel:${item.phone.stringValue}`}
+                >
+                  {call && (
+                    <div className="icon icon-phone-Call">
+                      <img
+                        src={call}
+                        alt="call"
+                        className="icon-imgg icon-call-card"
+                      />{" "}
+                      {item.phone.stringValue}
+                    </div>
+                  )}
+                  
+                </Link>
+              </div>
+            )}
+            {item.phone2.stringValue && (
+              <div className="profile-div profile-phone2">
+                <Link
+                  className="contactLink contact-whatsapp"
+                  to={`tel:${item.phone2.stringValue}`}
+                >
+                  {call && (
+                    <div className="icon icon-phone-Call">
+                      <img
+                        src={call}
+                        alt="call"
+                        className="icon-imgg icon-call-card"
+                      />{" "}
+                      {item.phone2.stringValue}
+                    </div>
+                  )}
+                  
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     );
