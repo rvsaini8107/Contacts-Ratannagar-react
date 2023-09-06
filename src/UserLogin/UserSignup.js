@@ -164,7 +164,7 @@ const UserSignup = () => {
   };
 
   return (
-    <div>
+    <div className="User-loginPage">
       <div className="heading-user-login">
         <h1 className="heading-signup">User Signup</h1>
       </div>

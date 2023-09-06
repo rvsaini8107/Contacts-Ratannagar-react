@@ -81,7 +81,7 @@ const GetDataFirebase = (props) => {
             )}
             {item.name.stringValue && (
               <div className="profile-div profile-name">
-                {"Name: " + item.name.stringValue}
+                {"- " + item.name.stringValue}
               </div>
             )}
 
@@ -156,7 +156,7 @@ const GetDataFirebase = (props) => {
   const NotFoundFun = () => {
     return (
       <div className="no-data-fond-div">
-        <h1 className="notFoundH1">No Data Found</h1>
+        <h3 className="notFoundH1">No Data Found</h3>
         {notFoundImg && (
           <img src={notFoundImg} className="notFoundImg" alt="Not Found" />
         )}

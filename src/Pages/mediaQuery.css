@@ -126,6 +126,18 @@
       .card-main {
         justify-content: center;
       }
+      .profileImage {
+        width: 111px;
+        max-height: 100px;
+        border-radius: 50%;
+      }
+      
+.card {
+  
+  width: 310px;
+  margin: 1%;
+  gap: 0px;
+}
       /* background image */
       .class1,.class2 {
         background-image: url("../images/camelMoon.png");

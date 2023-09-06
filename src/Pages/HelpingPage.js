@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import GetDataFirebase2 from "./GetDataFirebase2";
 import subCategories from "../Data/subCategories";
 const HelpingPage = (props) => {
-  const [selectedItem, setSelectedItem] = useState("Barbara");
+  const [selectedItem, setSelectedItem] = useState(subCategories[props.index][props.pageName][0]);
   // console.log(selectedItem);
 
   return (

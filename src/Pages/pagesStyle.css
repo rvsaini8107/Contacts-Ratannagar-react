@@ -12,12 +12,12 @@
 
 body {
   /* background:#130f0feb; */
-  /* background: linear-gradient(90deg, rgba(204,153,0,1) 0%, rgba(255,204,102,1) 100%); */
-  /* background: linear-gradient(90deg, rgba(204,153,0,0.9415966215587798) 0%, rgba(255,204,102,0.8687674899061186) 100%); */
-  background: linear-gradient(90deg,
-      rgba(255, 204, 153, 0.9051820557324493) 0%,
-      rgba(255, 102, 0, 0.8995798148360907) 100%);
-  /* background: linear-gradient(90deg, rgba(102,0,153,0.840756285424326) 8%, rgba(255,204,0,0.913585417076987) 100%); */
+  /* background: linear-gradient(90deg, */
+      /* rgba(255, 204, 153, 0.9051820557324493) 0%,
+      rgba(255, 102, 0, 0.8995798148360907) 100%); */
+  /* background: linear-gradient(90deg, rgba(247,223,177,1) 0%, rgba(207,154,104,1) 50%, rgba(162,111,68,1) 100%); */
+  background: linear-gradient(90deg, rgba(247,223,177,1) 0%, rgba(207,154,104,1) 68%, rgba(162,111,68,1) 100%);
+  color:#11303f;
 }
 
 .App {
@@ -82,8 +82,7 @@ body {
 }
 
 .wlc-left {
-  color: yellow;
-  background: #00000063;
+  color: #11303f;
   border-radius: 20px;
 }
 
@@ -95,13 +94,27 @@ body {
 }
 
 /* userSignup */
+.User-loginPage::before {
+  content: " ";
+  padding: 10px;
+  border: 2px solid red;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  width: 97%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(#f00,#f0f);
+  animation: sun 81s infinite;
+  z-index: -9999999;
+}
 .userLoginForm input {
   padding: 4px;
   margin: 8px 0px;
 }
 
 .Subcategory {
-  border: 2px solid #d5ea42;
+  border: 2px solid #04334a57;
   padding: 1% 1%;
   border-radius: 8px;
 }
@@ -115,6 +128,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  font-size: larger;
 }
 
 .card-main {
@@ -127,21 +141,19 @@ body {
 .card {
   border-radius: 100px 0px 22px 22px;
   padding: 3%;
-  width: 310px;
+  width: 450px;
   margin: 1%;
   display: flex;
   flex-direction: row;
-
   justify-content: center;
   align-items: center;
-  gap: 1px;
+  gap: 10px;
   padding: 10% 0px;
   box-shadow: -1px 3px 37px rgba(255, 255, 255, 0.75);
   border-left: 1px solid #ffffff3d;
   border-top: 1px solid #ffffff3d;
   overflow: hidden;
 }
-
 .profile-forum_name {
   font-family: "Calistoga", cursive;
   font-size: x-large;
@@ -205,7 +217,7 @@ body {
 }
 
 .active {
-  color: #ffcc30;
+  color: #010e14;
 }
 
 .active_btn {
@@ -222,14 +234,15 @@ body {
 
 a {
   text-decoration: none;
+  color: #04417e;
 }
 
 .main-navbar {
-  border-bottom: 1px solid #ffcc30;
+  border-bottom: 1px solid #04417e;
   position: fixed;
   width: 100%;
   top: 0px;
-  background: #ffffffba;
+  background: #0000004f;
 }
 
 .navbar h1 {
@@ -245,18 +258,19 @@ a {
   align-items: center;
   /* margin-top: 15%; */
   /* margin-bottom: 15%; */
-  background-image: url("../images/bg.jpg");
-  background-position: center;
-  height: 460px;
-  background-size: cover;
+  /* background-image: url("../images/bg.jpg"); */
+  /* background-position: center; */
+  height: 590px;
+  /* background-size: cover; */
 }
 
 .elephant {
-  background: white;
+  /* background: white; */
   width: 316px;
-  border: 1px solid black;
+  /* border: 1px solid  #010e14b5; */
   border-radius: 182px 48px 7px 44px;
 }
+
 
 .welcome-h2 {
   color: white;
@@ -269,7 +283,7 @@ a {
 }
 
 .welcome-h2-myName {
-  color: yellow;
+  color: #010e14;
   letter-spacing: 3px;
   font-family: "Tangerine", cursive;
   font-size: xxx-large;
@@ -278,7 +292,7 @@ a {
 .welcome-myName {
   font-size: medium;
   text-align: center;
-  color: white;
+  color: #010e14b5;
 }
 
 .welcome-h2 {
@@ -305,12 +319,11 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
   margin: 5% 0px;
 }
-
 #contact h2 {
-  color: white;
+  color: #11303f;
+  font-family: "Kaushan Script", cursive;
 }
 
 .contect-div {
@@ -366,8 +379,8 @@ textarea,
 
 /* profile page */
 .profileImage {
-  width: 150px;
-  max-height: 200px;
+  width: 130px;
+  max-height: 130px;
   border-radius: 50%;
 }
 
@@ -389,7 +402,7 @@ textarea,
 .loadingImg {
   width: 100px;
   height: 100px;
-  background: beige;
+  /* background: beige; */
   border-radius: 50%;
   padding: 1%;
 }
@@ -417,12 +430,21 @@ textarea,
   display: flex;
   flex-direction: column;
 } */
+/* about us */
+.About-heading {
+  color: #11303f;
+  font-family: "Kaushan Script", cursive;
+  text-align: center;
+}
+
+
 /* footer */
 .footer {
   display: flex;
-  color: #7fff00a1;
   font-size: larger;
   height: 75px;
   justify-content: center;
+  color: #11303f;
+  background: linear-gradient(90deg, rgb(243, 213, 156)0%, rgb(209, 151, 96) 50%, rgb(158, 99, 50) 100%);
   align-items: center;
 }

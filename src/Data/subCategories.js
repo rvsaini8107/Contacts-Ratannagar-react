@@ -118,4 +118,12 @@ const subCategories = [
 
     
 ];
-export default subCategories;
+const sortedSubCategories = subCategories.map((subCategories) => {
+    const sortedCategory = {};
+    for (const key in subCategories) {
+      sortedCategory[key] = subCategories[key].slice().sort();
+    }
+    return sortedCategory;
+  });
+// export default subCategories;
+export default sortedSubCategories

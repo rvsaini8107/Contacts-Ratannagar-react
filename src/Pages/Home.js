@@ -80,7 +80,7 @@ const Home = () => {
       {/* backgoround image show */}
       <div className="background-img-Rajasthan class2"></div>
       {/* about us  */}
-      {/* <AboutUsPage /> */}
+      <AboutUsPage />
       {/* footer */}
       <Footer />
 
