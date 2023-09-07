@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Tangerine:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Source+Sans+3:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Lobster&family=Source+Sans+3:wght@400;600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Lobster&family=Source+Sans+3:wght@400;600&family=Yatra+One&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -453,6 +453,7 @@ textarea,
   color: #865e14;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #866e4257;
+  font-family: 'Yatra One', cursive;
 }
 .aboutus-img {
   border-radius: 15px 15px 2px 93px;
