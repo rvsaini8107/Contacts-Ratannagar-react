@@ -9,6 +9,7 @@ import { useNavigate  } from 'react-router-dom';
 const UserSignup = () => {
   
   const [message, setMessage] = useState({ mess: "", type: "" });
+  const navigate = useNavigate();
   const [categoryChoose, setCategoryChoose] = useState("");
   const [user, setUser] = useState({
     name: "",
