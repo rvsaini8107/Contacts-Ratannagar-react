@@ -435,8 +435,28 @@ textarea,
   color: #11303f;
   font-family: "Kaushan Script", cursive;
   text-align: center;
+  margin-top: 3%;
 }
-
+.about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.about-p {
+  background-image: url(http://localhost:3000/static/media/bgborder2.7547da2d1f716470f054.jpg);
+  padding: 15%;
+  width: 90%;
+  border-radius: 41px 0px 26px 235px;
+  font-size: larger;
+  font-weight: 1000;
+  color: #865e14;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #866e4257;
+}
+.aboutus-img {
+  border-radius: 15px 15px 2px 93px;
+}
 
 /* footer */
 .footer {
