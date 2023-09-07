@@ -3,6 +3,8 @@ import { categories } from "../Data/catagoryArray";
 import subCategories from "../Data/subCategories";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../Firbase";
+import { useNavigate  } from 'react-router-dom';
+
 
 const UserSignup = () => {
   
@@ -140,6 +142,10 @@ const UserSignup = () => {
       const docRef = await addDoc(collection(db, "users_data"), user);
       console.log("Document written with ID: ", docRef.id);
       setMessage({ ...message, mess: "Successfully added", type: "success" });
+      setTimeout(() => {
+        setMessage({ mess: "", type: "" }); 
+        navigate ("/");
+      },3000)
       setUser({
         name: "",
         forumName: "",
