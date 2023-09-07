@@ -444,7 +444,7 @@ textarea,
   flex-direction: row-reverse;
 }
 .about-p {
-  background-image: url(http://localhost:3000/static/media/bgborder2.7547da2d1f716470f054.jpg);
+  background-image: url("./../images/bgborder2.jpg");
   padding: 15%;
   width: 90%;
   border-radius: 41px 0px 26px 235px;
