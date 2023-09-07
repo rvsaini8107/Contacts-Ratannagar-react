@@ -2,10 +2,10 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from "firebase/firestore";
 
-console.log(process.env.REACT_APP_FIREBASE_KEY,"api");
+console.log(process.env.REACT_APP_FIREBASE_KEY,"apiiiiiiiiiiiiiiiiiiiiii");
 const firebaseConfig = {
 
-  apiKey: "AIzaSyAi2eA5VC4oLP_q6oBwjzpNyP_VmSbu2yg",
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
 
   authDomain: "contactsratannagarreact.firebaseapp.com",
 
