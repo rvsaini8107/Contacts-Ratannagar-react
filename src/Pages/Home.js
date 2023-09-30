@@ -110,10 +110,7 @@ const Home = () => {
             <motion.span className="welcome-myName" variants={developerHeading}>
               - Developer
             </motion.span>
-            <motion.span
-              variants={nameHeading2}
-              className="welcome-h2-myName"
-            >
+            <motion.span variants={nameHeading2} className="welcome-h2-myName">
               ShriGanesh Saini
             </motion.span>
           </motion.h2>
@@ -176,6 +173,17 @@ const Home = () => {
         </div>
       </div>
       {/* background image show  */}
+      <ComponentBackgroundImageDiv nameClass="class1" />
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSe4aXEzqtpSU0nvj4BxKPH8bwSjTBpGsJhW4-Fja3gloQ0WLg/viewform?embedded=true"
+        width="100%"
+        height="1072"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+      >
+        Loading…
+      </iframe>
       <ComponentBackgroundImageDiv nameClass="class1" />
       {/* ContactUsPage here  */}
       <ContactUsPage />

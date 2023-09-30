@@ -7,7 +7,7 @@ const subCategories = [
         "Medical Store",
         "Photo Studio Shop",
         "Vegetable Shop",
-        "Sweet Shop",
+        // "Sweet Shop",
         "Tea Stall Shop",
         "Book Store Shop",
         "Printing Press Shop",
