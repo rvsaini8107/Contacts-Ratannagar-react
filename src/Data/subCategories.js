@@ -1,6 +1,6 @@
 const subCategories = [
     {Shops:[
-        "Barbara",
+        "Barber",
         "Electical",
         "Hardware",
         "Tent House",
