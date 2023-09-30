@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { Link } from "react-router-dom";
-import { db } from "../Firbase";
+import { db } from "../Firebase.js";
 import ProfleImage from "../images/userR.png";
 import ProfleImage2 from "../images/profile_icon.png";
 import notFoundImg from "../images/notFound.png";

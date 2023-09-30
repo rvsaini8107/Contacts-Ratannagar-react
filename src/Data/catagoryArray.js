@@ -12,6 +12,24 @@ export const categories = [
     "Others",
 
 ]
+
+// export const categories = {
+//   english: ["Shops",
+//   "Schools",
+//   "Temples",
+//   "Guest Houses",
+//   "Hospitals",
+//   "Private Workers",
+//   "Masjids",
+//   "Wooden Industries",
+//   "Iron Industries",
+//   "Governments",
+//   "Others",],
+//   hindi: [
+
+//   ]
+
+// }
 export const categoryLink = {
     "Shops":"ShopsPage",
     "Schools":"SchoolPage",

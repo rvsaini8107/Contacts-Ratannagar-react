@@ -28,36 +28,37 @@ import Home from "./Pages/Home";
 import UserSignup from "./UserLogin/UserSignup";
 import { Routes, Route } from "react-router-dom";
 import UserLogin from "./UserLogin/UserLogin";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useState } from "react";
+import UserProfile from "./UserLogin/UserProfile";
+
 
 function App() {
+ 
   return (
+   <>
+
+    
+
+<ToastContainer />
     <div className="App">
       {/* <h1>Om Shri Ganeshya namhara</h1>
      <h1>Om namharaya Shivaye </h1> */}
-
+      
       <Navbar />
       <Routes>
-        {/* <Route path="/" element={<Home />} />
-        <Route path="/shops" element={<ShopsPage />} />
-        <Route path="/Governments" element={<GovtPage />} />
-        <Route path="/gusthouse" element={<GusthousePage />} />
-        <Route path="/masjits" element={<MasjitPage />} />
-        <Route path="/Schools" element={<SchoolPage />} />
-        <Route path="/temples" element={<TemplePage />} />
-        <Route path="/Private Workers" element={<PrivateJobPage />} />
-        <Route path="/Hospitals" element={<HospitalPage />} />
-        <Route path="/ironIndustry" element={<IronIndustriesPage />} />
-        <Route path="/woodenIndustry" element={<WoodenIndustriesPage />} /> */}
-
-        {/* <Route path="/about" element={<AboutUsPage />} />
-        <Route path="/contact" element={<ContactUsPage />} /> */}
+       
+        
         <Route path="/login" element={<UserLogin />} />
         <Route path="/signup" element={<UserSignup />} />
+        <Route path="/UserProfile" element={<UserProfile />} />
         
 
         <Route path="*" element={<Home />} />
       </Routes>
     </div>
+    </>
   );
 }
 

@@ -3,13 +3,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1900px;
     flex-wrap: wrap;
     /* z-index: 1; */
  }
  .container-card .login-card{
-    
-     width: 280px;
+     width: 480px;
+     /* width: 280px; */
      height: 400px;
      margin: 30px;
      box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
